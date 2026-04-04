@@ -1,0 +1,28 @@
+<div style="margin: 0; padding: 0; text-align: center; border: none;">
+<a href="https://quantlet.com" target="_blank" style="text-decoration: none; border: none;">
+<img src="https://github.com/StefanGam/test-repo/blob/main/quantlet_design.png?raw=true" alt="Header Image" width="100%" style="margin: 0; padding: 0; display: block; border: none;" />
+</a>
+</div>
+
+```
+Name of Quantlet: VaR_CEE_DataDownload
+
+Published in: Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting for CEE Markets
+
+Description: Downloads daily stock index data from Stooq and FX exchange rate data from Yahoo Finance for five CEE countries (Romania, Poland, Czechia, Hungary, Bulgaria). Includes fallback mechanisms via pandas_datareader and yfinance.
+
+Keywords: data download, stock index, exchange rate, CEE markets, Stooq, Yahoo Finance, web scraping
+
+Author: Daniel Traian Pele
+
+Submitted: 2025
+
+Datafile: none (downloads data from web APIs)
+
+Input: Market definitions from config.py specifying tickers, date range (2007-01-01 to 2025-12-31)
+
+Output: Raw CSV files for each stock index and FX pair saved in data/raw/
+
+Example: Downloads BET index from Stooq and EUR/RON exchange rate from Yahoo Finance for Romania
+
+```
