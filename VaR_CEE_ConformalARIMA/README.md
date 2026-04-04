@@ -1,0 +1,28 @@
+<div style="margin: 0; padding: 0; text-align: center; border: none;">
+<a href="https://quantlet.com" target="_blank" style="text-decoration: none; border: none;">
+<img src="https://github.com/StefanGam/test-repo/blob/main/quantlet_design.png?raw=true" alt="Header Image" width="100%" style="margin: 0; padding: 0; display: block; border: none;" />
+</a>
+</div>
+
+```
+Name of Quantlet: VaR_CEE_ConformalARIMA
+
+Published in: Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting for CEE Markets
+
+Description: Implements ARIMA(1,0,0) with conformal prediction for VaR and ES forecasting. Uses rolling 250-day AR(1) model with conformal quantiles of in-sample residuals to construct prediction intervals.
+
+Keywords: ARIMA, conformal prediction, autoregressive model, Value-at-Risk, Expected Shortfall, distribution-free, rolling window
+
+Author: Daniel Traian Pele
+
+Submitted: 2025
+
+Datafile: data/processed/{country}_returns.parquet
+
+Input: Log return series, rolling window of 250 days, VaR levels (1%, 2.5%, 5%), out-of-sample start date
+
+Output: CSV files with daily VaR and ES forecasts per series in data/var_forecasts/
+
+Example: Fits AR(1) on rolling 250-day window for PX_ret and adds conformal quantile correction for VaR
+
+```
